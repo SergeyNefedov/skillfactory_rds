@@ -20,7 +20,8 @@ def game_core_v3(number):
             predict_up = predict
             predict = int(round((predict_up+predict_low)/2))
            # print('Ищем в диапазоне от {} до {}'.format(predict_low,predict_up))
-    count += 1
+    if number!= 50:
+        count += 1
     return count
         
 def score_game(game_core):
